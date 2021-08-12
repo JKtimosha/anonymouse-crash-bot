@@ -23,9 +23,8 @@ from colorama import Fore, init
 #https://prnt.sc/1n85dsq
 
 intents = discord.Intents.all()
-client = discord.client
-bot = commands.Bot(command_prefix = '+', intents=intents)
-bot.remove_command( 'help' )
+client = commands.Bot(command_prefix = '+', intents=intents)
+client.remove_command( 'help' )
 
 @client.event
 async def on_ready():
