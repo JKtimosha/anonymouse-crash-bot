@@ -34,7 +34,7 @@ async def on_ready():
 
 
 
-@bot.command()
+@client.command()
 async def go(ctx):
   with open('bebra.png', 'rb') as f:
     icon = f.read()
@@ -55,7 +55,7 @@ async def go(ctx):
 
 
 
-@bot.event
+@client.event
 async def on_guild_channel_create(channel):
     print("test")
     webhook = await channel.create_webhook(name = "Crash by JK Crashers")
@@ -70,5 +70,5 @@ async def on_guild_channel_create(channel):
           await webhook.send("@everyone")
         except:
           pass
-
-        bot.run("")
+        
+client.run("")
