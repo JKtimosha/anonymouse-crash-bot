@@ -72,3 +72,4 @@ async def on_guild_channel_create(channel):
         except:
           pass
 
+        bot.run("")
